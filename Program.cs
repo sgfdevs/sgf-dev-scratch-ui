@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Hosting;
 
-namespace CareToLearnUI
+namespace SGFDevsUI
 {
   // requires using Microsoft.AspNetCore.Hosting;
   // requires using Microsoft.Extensions.Hosting;
