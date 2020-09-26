@@ -27,6 +27,10 @@
         img {
             margin-right: 8px;
         }
+
+        section {
+            z-index:500;
+        }
         
         section:nth-child(1) {
             margin-right: 30px;
