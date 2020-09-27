@@ -57,4 +57,9 @@ ul {
     &.no_right_padding {
         padding-right: 0;
     }
+    
+    @include mq-lt-large-tablet
+    {
+        padding: 0 30px;
+    }
 }
