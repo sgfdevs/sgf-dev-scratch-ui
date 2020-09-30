@@ -39,6 +39,7 @@
     
     .scroll_list {
         overflow-x: auto;
+        margin-top: 32px;
 
         &::-webkit-scrollbar {
             display: none;
@@ -48,9 +49,10 @@
     ul {
         padding: 0 50px;
         display: flex;
-        margin-top: 32px;
+        scroll-snap-type: x mandatory;
         
         li {
+            scroll-snap-align: end;
             background: #FFF;
             border-radius: 27px;
             min-width: 550px;
