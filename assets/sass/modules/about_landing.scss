@@ -1,15 +1,20 @@
 .about_landing {
+    margin-top: 0;
     position: relative;
-    margin: 2rem;
+    overflow-x: hidden;
     background: $dark_blue;
     color: #ffffff;
-    border-radius: 30px;
+    border-radius: 20px;
 
     .about_grid {
         display: grid;
         grid-template-columns: 2fr;
         column-gap: 4rem;
-        padding: 5rem 0 5rem 4rem;
+        padding: 5rem 0 6rem 3rem;
+
+        h1 {
+            line-height: 43px;
+        }
 
         .about_text {
             grid-column: 1;
@@ -20,4 +25,21 @@
             grid-column: 2;
         }
     }
+}
+
+.about_content {
+    margin: 0 auto;
+    padding: 3rem;
+    max-width: 100ch;
+
+    h2 {
+        line-height: 43px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+
+.about_footer {
+    margin: 0 auto;
+    padding: 3rem 0 3rem 2rem;
 }
