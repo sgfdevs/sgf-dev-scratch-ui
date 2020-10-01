@@ -1,0 +1,23 @@
+.about_landing {
+    position: relative;
+    margin: 2rem;
+    background: $dark_blue;
+    color: #ffffff;
+    border-radius: 30px;
+
+    .about_grid {
+        display: grid;
+        grid-template-columns: 2fr;
+        column-gap: 4rem;
+        padding: 5rem 0 5rem 4rem;
+
+        .about_text {
+            grid-column: 1;
+            padding: 0 2rem;
+        }
+
+        .about_image {
+            grid-column: 2;
+        }
+    }
+}

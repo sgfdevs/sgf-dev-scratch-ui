@@ -1,11 +1,11 @@
-.about_banner
-{
+.about_banner {
     padding: 180px 0 102px 0;
     position: relative;
     overflow-x: hidden;
-    
-    background: url("/images/circuitry/circuit_graphic.svg") center right no-repeat;
-    
+
+    background: url("/images/circuitry/circuit_graphic.svg") center right
+        no-repeat;
+
     &:before {
         position: absolute;
         z-index: 1;
@@ -15,16 +15,16 @@
         height: 30px;
         background: $dark_blue;
         border-radius: 0 0 27px 27px;
-        content: '';
+        content: "";
     }
-    
+
     min-height: 353px;
-    
+
     .content {
         //max-width: 1200px;
         max-width: 43%;
     }
-    
+
     h3 {
         font-size: 36px;
         color: #153558;
@@ -32,30 +32,28 @@
         line-height: 43px;
         margin-bottom: 0;
     }
-    
-    @include mq-desktop
-    {
+
+    @include mq-desktop {
         padding: 140px 0 96px 0;
         background-position: 70vw center;
-        
+
         .content {
             max-width: 65%;
         }
     }
-    
-    @include mq-medium
-    {
+
+    @include mq-medium {
         padding: 130px 0 70px 0;
-        
+
         h3 {
             font-size: 30px;
             line-height: 37px;
         }
-        
+
         .content {
             max-width: 795px;
         }
-        
+
         p {
             max-width: 450px;
         }
@@ -63,29 +61,30 @@
         background-position: 65vw 80%;
         background-size: 568px 257px;
     }
-    
-    @include mq-lt-medium
-    {
+
+    @include mq-lt-medium {
         background-image: none;
         position: relative;
 
         padding: 153px 0 40px 0;
-        
+
         &:after {
             position: absolute;
             top: -23px;
             left: 0;
-            content: '';
-            background: url("/images/circuitry/circuit_graphic.svg") right bottom no-repeat;
+            content: "";
+            background: url("/images/circuitry/circuit_graphic.svg") right
+                bottom no-repeat;
             height: 180px;
             width: 100%;
             background-size: 120%;
         }
-        
-        .content, p {
+
+        .content,
+        p {
             max-width: 100%;
         }
-        
+
         h3 {
             font-size: 20px;
             line-height: 30px;
