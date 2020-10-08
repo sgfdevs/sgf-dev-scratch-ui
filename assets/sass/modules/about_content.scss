@@ -1,0 +1,38 @@
+.about_content {
+    margin: 0 auto;
+    max-width: 80ch;
+    padding-top: 0;
+
+    h2 {
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: 40px;
+        margin-bottom: 0;
+        color: $dark_blue;
+    }
+
+    @include mq-desktop {
+        padding: 20px 0 96px 0;
+    }
+
+    @include mq-medium {
+        padding: 20px 0 70px 0;
+
+        p {
+            max-width: 450px;
+        }
+    }
+
+    @include mq-lt-medium {
+        padding: 30px 15px;
+
+        p {
+            max-width: 100%;
+        }
+
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}

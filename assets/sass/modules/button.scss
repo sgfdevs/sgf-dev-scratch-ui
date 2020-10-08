@@ -18,6 +18,13 @@
     &.inverse {
         background: $dark_blue;
     }
+    &.wide {
+        padding: 0 36px;
+
+        @include mq-lt-medium {
+            padding: 0 24px;
+        }
+    }
 
     &.outline {
         border: 1px solid #619ece;

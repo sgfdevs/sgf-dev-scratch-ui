@@ -1,45 +1,80 @@
 .about_landing {
-    margin-top: 0;
+    padding: 102px 0 102px 50px;
     position: relative;
     overflow-x: hidden;
-    background: $dark_blue;
     color: #ffffff;
     border-radius: 20px;
 
-    .about_grid {
-        display: grid;
-        grid-template-columns: 2fr;
-        column-gap: 4rem;
-        padding: 5rem 0 6rem 3rem;
+    background: url("/images/circuitry/circuit_graphic.svg") center right
+            no-repeat,
+        #153558;
+    background-size: 700px 450px;
+    background-position: 52vw center;
+
+    min-height: 353px;
+
+    h1 {
+        line-height: 43px;
+    }
+    .content {
+        //max-width: 1200px;
+        max-width: 49%;
+    }
+
+    @include mq-desktop {
+        padding: 50px 0 96px 0;
+        background-position: 57vw center;
+
+        .content {
+            max-width: 58ch;
+        }
+    }
+
+    @include mq-medium {
+        padding: 130px 0 70px 0;
+
+        .content {
+            max-width: 795px;
+        }
+
+        p {
+            max-width: 450px;
+        }
+
+        background-position: 65vw 80%;
+        background-size: 568px 257px;
+    }
+
+    @include mq-lt-medium {
+        background-image: none;
+        position: relative;
+
+        padding: 170px 0 40px 0;
+
+        &:after {
+            position: absolute;
+            top: -23px;
+            left: 0;
+            content: "";
+            background: url("/images/circuitry/circuit_graphic.svg") right
+                bottom no-repeat;
+            height: 180px;
+            width: 100%;
+            background-size: 120%;
+        }
+
+        .container {
+            padding: 0 15px;
+        }
+
+        .content,
+        p {
+            max-width: 100%;
+        }
 
         h1 {
-            line-height: 43px;
-        }
-
-        .about_text {
-            grid-column: 1;
-            padding: 0 2rem;
-        }
-
-        .about_image {
-            grid-column: 2;
+            font-size: 20px;
+            line-height: 30px;
         }
     }
-}
-
-.about_content {
-    margin: 0 auto;
-    padding: 3rem;
-    max-width: 100ch;
-
-    h2 {
-        line-height: 43px;
-        font-weight: bold;
-        font-size: 30px;
-    }
-}
-
-.about_footer {
-    margin: 0 auto;
-    padding: 3rem 0.1rem 3rem 2rem;
 }
