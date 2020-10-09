@@ -5,7 +5,7 @@
     font-size: 14px;
     display: flex !important;
     flex-direction: column;
-    min-height: 250px;
+    min-height: 300px;
 
     dl {
         margin: 0;
@@ -36,5 +36,18 @@
     footer {
         margin-top: auto;
         padding-top: 5rem;
+    }
+
+    @include mq-desktop {
+        min-width: 375px;
+    }
+
+    @include mq-small-desktop {
+        max-width: 100%;
+        min-width: 250px;
+    }
+
+    @include mq-large-mobile {
+        max-width: 350px;
     }
 }

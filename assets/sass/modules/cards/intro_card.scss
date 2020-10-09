@@ -40,12 +40,31 @@
     }
 
     &.about_intro {
-        min-height: 250px;
-        color: #000000;
+        min-height: 300px;
         font-size: 27px;
+        max-width: 100%;
+        min-width: 316px;
 
         dt {
             padding-bottom: 1rem;
+        }
+
+        dd {
+            font-size: 27px;
+            color: #000000;
+            line-height: 35px;
+        }
+
+        @include mq-desktop {
+            min-width: 375px;
+        }
+
+        @include mq-small-desktop {
+            max-width: 350px;
+        }
+
+        @include mq-large-mobile {
+            max-width: 350px;
         }
     }
 }
