@@ -45,4 +45,9 @@
             line-height: 30px;
         }
     }
+
+    @include mq-large-mobile {
+        margin: 0 auto;
+        padding: 28px 23px;
+    }
 }

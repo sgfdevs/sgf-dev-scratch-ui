@@ -55,16 +55,12 @@
             line-height: 35px;
         }
 
-        @include mq-desktop {
-            min-width: 375px;
-        }
-
         @include mq-small-desktop {
             max-width: 350px;
         }
 
         @include mq-large-mobile {
-            max-width: 350px;
+            max-width: 250px;
         }
     }
 }
