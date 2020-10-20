@@ -1,31 +1,41 @@
-.button
-{
+.button {
     background: $light_blue;
     border-radius: 25.5px;
     font-weight: 600;
     font-size: 14px;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 0 24px;
     //display: inline-block;
     border: 0;
     height: 40px;
     display: inline-flex;
     align-items: center;
-    
+
     &.blue {
         color: $dark_blue;
     }
-    
+
+    &.inverse {
+        background: $dark_blue;
+    }
+    &.wide {
+        padding: 0 36px;
+
+        @include mq-lt-medium {
+            padding: 0 24px;
+        }
+    }
+
     &.outline {
-        border: 1px solid #619ECE;
+        border: 1px solid #619ece;
         background: none;
         color: $dark_blue;
-        
+
         &.small {
             padding: 0 14px;
             height: 30px;
         }
-        
+
         &.dark {
             border-color: #000;
         }
@@ -36,7 +46,7 @@
         }
 
         &.gray {
-            border-color: #D8D8D8;
+            border-color: #d8d8d8;
             color: #000;
         }
     }

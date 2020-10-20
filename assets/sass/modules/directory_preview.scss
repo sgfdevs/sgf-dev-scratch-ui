@@ -1,5 +1,4 @@
-.directory_preview
-{
+.directory_preview {
     padding: 43px 0 122px 0;
     position: relative;
 
@@ -11,18 +10,18 @@
         left: 0;
         width: 100%;
         height: 30px;
-        background: #FFF;
+        background: #fff;
         border-radius: 27px 27px 0 0;
-        content: '';
+        content: "";
     }
-    
+
     header {
         padding: 0 50px;
         margin-bottom: 46px;
         display: flex;
         justify-content: space-between;
     }
-    
+
     .cards {
         &.inline .card:first-child {
             margin-left: 50px;
@@ -34,7 +33,12 @@
             top: 0;
             left: 0;
             height: 100%;
-            background: linear-gradient(270deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0.4) 100%);
+            background: linear-gradient(
+                270deg,
+                rgba(255, 255, 255, 0.9) 0%,
+                rgba(255, 255, 255, 0.7) 70%,
+                rgba(255, 255, 255, 0.4) 100%
+            );
             z-index: 10;
             display: flex;
             align-content: center;
@@ -42,40 +46,43 @@
             transition: opacity, 0.25s;
             color: $dark_blue;
             backdrop-filter: blur(2px);
-            
+
             &.scroll_left {
-                background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0.4) 100%);
+                background: linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.9) 0%,
+                    rgba(255, 255, 255, 0.7) 70%,
+                    rgba(255, 255, 255, 0.4) 100%
+                );
             }
-            
-            
+
             &.disabled {
                 opacity: 0;
                 pointer-events: none;
             }
         }
-        
+
         .scroll_right {
             left: auto;
             right: 0;
         }
     }
-    
+
     section:nth-child(2) {
         display: flex;
         align-items: flex-end;
-        
+
         span {
             font-weight: 300;
             margin-right: 14px;
         }
-        
+
         .button {
             transform: translateY(5px);
         }
     }
 
-    @include mq-large-tablet
-    {
+    @include mq-large-tablet {
         > header {
             flex-wrap: wrap;
             span {
