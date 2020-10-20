@@ -15,26 +15,13 @@
 
     &.about_grid {
         display: grid;
-        grid-template-columns: repeat(4, minmax(315px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(315px, 1fr) ) ;
         gap: 25px 27px;
         padding: 4rem 2rem;
-
-        @include mq-desktop {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 2rem;
-            margin: 0 auto;
-            max-width: 800px;
-            padding: 2rem;
-        }
-
-        @include mq-large-mobile {
-            display: block;
-            margin: 0 auto;
-
-            article {
-                margin-bottom: 2rem;
-            }
+        
+        .card {
+            max-width: none;
+            min-height: 284px;
         }
     }
 

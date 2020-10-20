@@ -37,17 +37,4 @@
         margin-top: auto;
         padding-top: 5rem;
     }
-
-    @include mq-desktop {
-        min-width: 375px;
-    }
-
-    @include mq-small-desktop {
-        max-width: 100%;
-        min-width: 250px;
-    }
-
-    @include mq-large-mobile {
-        max-width: 350px;
-    }
 }
