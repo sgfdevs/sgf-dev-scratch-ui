@@ -10,6 +10,13 @@
     <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="3.1.8" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Pages\Leadership.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
     <Target Name="NpmInstall" BeforeTargets="Build" Condition=" !Exists('$(HorseRoot)node_modules') ">
         <Message Importance="high" Text="Running npm install. You'll be horsing around in no time..." />
         <Exec Command="npm install" />
