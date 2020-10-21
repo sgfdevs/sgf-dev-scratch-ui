@@ -1,0 +1,106 @@
+﻿@page
+@using SGFDevsUI.Classes
+@{
+    ViewData["Title"] = "Springfield Devs - Leadership";
+    var officers = new List<Member>()
+    {
+        new Member()
+        {
+            Name = "Myke Bates",
+            OrgTitle = "President",
+            Company = "Hearo",
+            CompanyUrl = "#",
+            Image = "/images/profiles/myke.jpg",
+            JobTitle = "Co-Founder and CTO",
+            ShortBio = "Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod."
+        },
+        new Member()
+        {
+            Name = "Tom Rankin",
+            OrgTitle = "Vice President",
+            Company = "Hearo",
+            CompanyUrl = "#",
+            Image = "/images/profiles/tom.jpg",
+            JobTitle = "VP Of Engineering",
+            ShortBio = "Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod."
+        },
+        new Member()
+        {
+            Name = "Shawna Baron",
+            OrgTitle = "Secretary",
+            Company = "Burrell",
+            CompanyUrl = "#",
+            Image = "/images/profiles/shawna.jpg",
+            JobTitle = "Forensic Psychologist",
+            ShortBio = "Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod."
+        },
+        new Member()
+        {
+            Name = "Jason Klein",
+            OrgTitle = "Treasurer",
+            Company = "Logic Forte",
+            CompanyUrl = "#",
+            Image = "/images/profiles/jason.jpg",
+            JobTitle = "Founder",
+            ShortBio = "Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod."
+        },
+    };
+    
+    var boardMembers = new List<Member>()
+    {
+        new Member() { Name = "Tiffany Ford", Image = "/images/profiles/tiffany.jpg" },
+        new Member() { Name = "Charlie Rosenbury", Image = "/images/profiles/charlie.jpg" },
+        new Member() { Name = "Tim Franklin", Image = "/images/profiles/tim.jpg" },
+        new Member() { Name = "Justin Wells", Image = "/images/profiles/justin.jpg" },
+        new Member() { Name = "Jason Amschler", Image = "/images/profiles/jason_a.jpg" }
+    };
+}
+
+<header class="leadership_header">
+    <div class="container">
+        <h1>Leadership</h1>
+    </div>
+</header>
+
+<div class="container">
+    <div class="leader_grid officers">
+        <ul>
+            @foreach (var member in officers)
+            {
+                <li>
+                    <figure>
+                        <img src="@member.Image" alt="@member.Name">
+                    </figure>
+                    <h2><a href="#">@member.Name</a></h2>
+                    <h3>@member.OrgTitle</h3>
+                    <p>
+                        @member.ShortBio
+                    </p>
+                    <p>
+                        @member.JobTitle - <a href="@member.CompanyUrl">@member.Company</a>
+                    </p>
+                </li>
+            }
+        </ul>
+    </div>
+    
+    <div class="leader_grid">
+        <header>
+            <h2>Board Of Directors</h2>
+        </header>
+        
+        <ul>
+            @foreach (var member in boardMembers)
+            {
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="@member.Image" alt="@member.Name">
+                        </figure>
+                        <h4>@member.Name</h4>
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
