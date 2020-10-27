@@ -1,0 +1,47 @@
+﻿@page
+@using SGFDevsUI.Classes
+@{
+    ViewData["Title"] = "Springfield Devs - Groups";
+}
+
+<div class="circuit_header">
+    <div class="container medium_clamp">
+        <img src="/images/headlines/groups.svg" alt="Groups">
+    </div>
+</div>
+
+<div class="group_listing">
+    @for (int i = 0; i < 6; i++)
+    {
+        <div class="group">
+            <div class="image">
+                <img src="/images/groups/aws.jpg" alt="Springfield AWS">
+            </div>
+
+            <div class="content">
+                <h2>Springfield Amazon Web Services (SGF AWS) User Group</h2>
+                <h3>What we're about</h3>
+                <p>
+                    Springfield Amazon Web Services (SGF AWS) User Group is a community-based user group that promotes and advocates for Amazon Web Services in the Springfield Missouri region.
+                </p>
+                <p>
+                    We meet during Dev Night (<a href="#">https://meetup.com/sgfdevs/</a>) (every 1st Wednesday) at The eFactory. Social/Food/Drinks 6pm, Announcements 6:30pm, Presentation 7pm-8pm. Visit our Meetup Page (<a href="#">https://meetup.com/sgf-aws</a>) for any last minute meeting announcements.
+                </p>
+    
+                <a href="#" class="button">Group Details</a>
+                
+                <dl>
+                    <dt>Group Leaders</dt>
+                    <dd>
+                        <img src="/images/profiles/jason.jpg" alt="Jason Klein">
+                        <span>Jason F.</span>
+                    </dd>
+                    <dd>
+                        <img src="/images/profiles/jason.jpg" alt="Jason Klein">
+                        <span>Jason K.</span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    }
+</div>
