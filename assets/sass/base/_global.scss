@@ -49,7 +49,7 @@ ul {
 .container {
     //max-width: 1500px;
     margin: 0 auto; 
-    padding: 0 50px; 
+    padding: 0 50px;
     position: relative;
 
     &.wide { max-width: 1600px; }
@@ -57,13 +57,25 @@ ul {
     &.no_right_padding {
         padding-right: 0;
     }
-    
-    &.clamp {
-        max-width: 1500px;
-    }
-    
+
     @include mq-lt-large-tablet
     {
         padding: 0 30px;
     }
+    
+    &.clamp {
+        max-width: 1500px;
+    }
+
+    &.medium_clamp {
+        max-width: 1200px;
+        padding: 0;
+
+        @include mq-lt-large-tablet
+        {
+            padding: 0 30px;
+        }
+    }
+    
+    
 }
