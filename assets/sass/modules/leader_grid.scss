@@ -97,4 +97,32 @@
             text-transform: uppercase;
         }
     }
+    
+    &.history {
+        P:first-of-type {
+            margin-top: 0;
+        }
+
+        p:last-of-type {
+            margin-bottom: 0;
+        }
+        
+        header {
+            text-align: left;
+            margin-bottom: 36px;
+            display: flex;
+            
+            img {
+                margin-right: 6px;
+            }
+            
+            h2 {
+                font-weight: 900;
+                font-size: 51px;
+                color: #153557;
+                letter-spacing: 0;
+                line-height: 43px;
+            }
+        }
+    }
 }

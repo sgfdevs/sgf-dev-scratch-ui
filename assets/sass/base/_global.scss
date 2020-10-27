@@ -47,7 +47,7 @@ ul {
 }
 
 .container {
-    //max-width: 1500px; 
+    //max-width: 1500px;
     margin: 0 auto; 
     padding: 0 50px; 
     position: relative;
@@ -56,6 +56,10 @@ ul {
     
     &.no_right_padding {
         padding-right: 0;
+    }
+    
+    &.clamp {
+        max-width: 1500px;
     }
     
     @include mq-lt-large-tablet
