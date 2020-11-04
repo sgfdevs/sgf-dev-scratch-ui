@@ -21,6 +21,11 @@ CD into the project folder and run `npm install`.
 
 After that you're ready to run `dotnet run`, which will start the Kestrel web server and automatically open the site in your browser.
 
+If you get an error complaining about an invalid certificate or SSL errors run the following commands on Windows or Mac
+`dotnet dev-certs https`
+`dotnet dev-certs https --trust`
+
+
 The site is available at at localhost:3000 through BrowserSync which is proxying the .NET Core app from localhost:5000
 
 Styles are located at ~/assets/sass/ and updates to them will be automatically be injected via WebPack. Changes to any Razor(.cshtml) files will trigger a browser refresh through BrowerSync.
