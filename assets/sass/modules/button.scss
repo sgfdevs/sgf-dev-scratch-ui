@@ -18,6 +18,7 @@
     &.inverse {
         background: $dark_blue;
     }
+    
     &.wide {
         padding: 0 36px;
 
@@ -48,6 +49,11 @@
         &.gray {
             border-color: #d8d8d8;
             color: #000;
+        }
+
+        &.light_blue {
+            border-color: $light_blue;
+            color: #fff;
         }
     }
 }
