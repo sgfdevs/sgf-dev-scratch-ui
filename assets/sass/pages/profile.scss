@@ -89,6 +89,11 @@
     .tabs {
         display: flex;
         flex-wrap: wrap;
+        justify-content:center;
+
+        @media (min-width: 1024px) {
+            justify-content:flex-start;
+        }
 
         .tab {
             position: absolute;
