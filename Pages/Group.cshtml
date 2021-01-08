@@ -1,34 +1,35 @@
 @page
 @{
-ViewData["Title"] = "Company Name - Company Profile - Springfield Devs";
+ViewData["Title"] = "Group Name - Group Profile - Springfield Devs";
 }
 
 
-<main class="company">
+<main class="group">
 
-    <header class="company-header">
+    <header class="group-header">
 
         <div class="information">
 
-            <img class="logo" src="https://i.vimeocdn.com/portrait/5464486_640x640" alt="The Alchemedia Project Logo" />
-            <h1>The Alchemedia Project</h1>
-            <h2>Integrated Branding Agency</h2>
+            <p class="category">Group</p>
+            <h1>Springfield Amazon Web Services User Group</h1>
 
             <a href="#" class="button">Visit Site</a>
 
         </div>
         <!-- /.information -->
 
-        <div class="image">
-            <img src="https://thealchemediaproject.com/img/TAP.gif" alt="Namey McNamerson" />
+        <div class="video">
+        
+            <iframe src="https://www.youtube.com/embed/3a5mR5xoUbc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         </div>
-        <!-- /.image -->
+        <!-- /.video -->
 
     </header>
-    <!-- /.company-header -->
+    <!-- /.group-header -->
 
     <!-- Tabbed sections -->
-    <section class="company-content tabs">
+    <section class="group-content tabs">
 
         <input name="tabs" type="radio" id="tab-1" checked="checked" class="tab" />
         <!-- /.tab -->
@@ -39,11 +40,6 @@ ViewData["Title"] = "Company Name - Company Profile - Springfield Devs";
             <div class="col-1">
     
                 <div class="metadata">
-
-                    <div class="flag">
-                        <!-- TODO modularize with the figcaption? -->
-                        <div>Platinum Sponsor</div>
-                    </div>
     
                     <div class="location">
                         <i class="icon fas fa-map-marker-alt"></i>
@@ -53,12 +49,17 @@ ViewData["Title"] = "Company Name - Company Profile - Springfield Devs";
     
                     <div class="member-since">
                         <i class="icon fas fa-calendar-alt"></i>
-                        Member since whenever
+                        Established whenever
                     </div>
                     <!-- /.member-since -->
     
                 </div>
                 <!-- /.metadata -->
+
+                <div class="image">
+                    <img src="http://placekitten.com/1400/1000" alt="Namey McNamerson" />
+                </div>
+                <!-- /.image -->
 
                 <div class="socials">
 
@@ -66,7 +67,7 @@ ViewData["Title"] = "Company Name - Company Profile - Springfield Devs";
         
                     <ul>
                         <li class="social website">
-                            <a href="#"><i class="icon fa fa-globe"></i> thealchemediaproject.com</a>
+                            <a href="#"><i class="icon fa fa-globe"></i> /SGF-AWS</a>
                         </li>
                         <li class="social twitter">
                             <a href="#"><i class="icon fab fa-twitter"></i> Twitter</a>
@@ -79,6 +80,9 @@ ViewData["Title"] = "Company Name - Company Profile - Springfield Devs";
                         </li>
                         <li class="social instagram">
                             <a href="#"><i class="icon fab fa-instagram"></i> Instagram</a>
+                        </li>
+                        <li class="social youtube">
+                            <a href="#"><i class="icon fab fa-youtube"></i> Youtube</a>
                         </li>
                     </ul>
         
@@ -107,10 +111,12 @@ ViewData["Title"] = "Company Name - Company Profile - Springfield Devs";
 
                 <div class="bio">
                     <h3>Biography</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, sed vero molestias dolor minus placeat ad harum a cumque facere. Aspernatur sint ratione vel sapiente corrupti accusamus dicta laudantium. Ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus in, ea corporis sint sunt vel nostrum, earum saepe aliquam veritatis exercitationem asperiores quis doloribus. Rerum dignissimos dolorum sint veniam est.
+                    <p>Springfield Amazon Web Services (SGF AWS) User Group is a community-based user group that promotes and advocates for Amazon Web Services in the Springfield Missouri region.
                     </p>
-    
-                    <p>Sit amet consectetur adipisicing elit. Odio fugiat nemo, alias rerum blanditiis nisi error similique rem accusamus vel accusantium amet ratione voluptatum culpa aperiam vitae laudantium mollitia laboriosam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque repellat saepe molestias, hic eos inventore doloremque doloribus praesentium explicabo id assumenda corrupti vero, fugit exercitationem! Dolor molestiae hic vel commodi?</p>
+                    <p>We meet during Dev Night (<a href="https://meetup.com/sgfdevs/">https://meetup.com/sgfdevs/</a>) (every 1st Wednesday) at The eFactory. Social/Food/Drinks 6pm, Announcements 6:30pm, Presentation 7pm-8pm. Visit our Meetup Page (<a href="https://meetup.com/sgf-aws">https://meetup.com/sgf-aws</a>) for any last minute meeting announcements.</p>
+                    <p>Subscribe to our YouTube Channel (<a href="https://www.youtube.com/c/sgfaws">https://www.youtube.com/c/sgfaws</a>) and register for upcoming events on our Meetup page (<a href="https://www.meetup.com/sgf-aws/">https://www.meetup.com/sgf-aws/</a>).</p>
+                    <p>Join our conversation in the #AWS channel of the SGF Devs Slack Group (https:// sgfdevs.slack.com)! Need an invite? Click here. (<a href="https://sgfdev.slack.matasgf.com/">https://sgfdev.slack.matasgf.com/</a>)</p>
+                    <p>Subscribe to local events on the Forward Springfield Technology Calendar (<a href="https://fwdsgf.com">https://fwdsgf.com</a>).</p>
                 </div>
                 <!-- /.bio -->
                 
@@ -148,11 +154,11 @@ ViewData["Title"] = "Company Name - Company Profile - Springfield Devs";
 
         <input name="tabs" type="radio" id="tab-2" class="tab" />
         <!-- /.tab -->
-        <label for="tab-2" class="label">Archive <span>6</span></label>
+        <label for="tab-2" class="label">Events <span>12</span></label>
         <!-- /.label -->            
         <div class="panel archive">
 
-            <h3>Archive</h3>
+            <h3>Events</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, sed vero molestias dolor minus placeat ad harum a cumque facere. Aspernatur sint ratione vel sapiente corrupti accusamus dicta laudantium. Ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus in, ea corporis sint sunt vel nostrum, earum saepe aliquam veritatis exercitationem asperiores quis doloribus. Rerum dignissimos dolorum sint veniam est.
             </p>
 
@@ -161,7 +167,20 @@ ViewData["Title"] = "Company Name - Company Profile - Springfield Devs";
 
         <input name="tabs" type="radio" id="tab-3" class="tab" />
         <!-- /.tab -->
-        <label for="tab-3" class="label">Members <span>12</span></label>
+        <label for="tab-3" class="label">Leaders <span>4</span></label>
+        <!-- /.label -->            
+        <div class="panel archive">
+
+            <h3>Leaders</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, sed vero molestias dolor minus placeat ad harum a cumque facere. Aspernatur sint ratione vel sapiente corrupti accusamus dicta laudantium. Ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus in, ea corporis sint sunt vel nostrum, earum saepe aliquam veritatis exercitationem asperiores quis doloribus. Rerum dignissimos dolorum sint veniam est.
+            </p>
+
+        </div>
+        <!-- /.panel -->
+
+        <input name="tabs" type="radio" id="tab-4" class="tab" />
+        <!-- /.tab -->
+        <label for="tab-4" class="label">Members <span>29</span></label>
         <!-- /.label -->            
         <div class="panel archive">
 
@@ -172,13 +191,13 @@ ViewData["Title"] = "Company Name - Company Profile - Springfield Devs";
         </div>
         <!-- /.panel -->
 
-        <input name="tabs" type="radio" id="tab-4" class="tab" />
+        <input name="tabs" type="radio" id="tab-5" class="tab" />
         <!-- /.tab -->
-        <label for="tab-4" class="label">Jobs <span>4</span></label>
+        <label for="tab-5" class="label">Archive <span>62</span></label>
         <!-- /.label -->            
         <div class="panel archive">
 
-            <h3>Jobs</h3>
+            <h3>Archive</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, sed vero molestias dolor minus placeat ad harum a cumque facere. Aspernatur sint ratione vel sapiente corrupti accusamus dicta laudantium. Ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus in, ea corporis sint sunt vel nostrum, earum saepe aliquam veritatis exercitationem asperiores quis doloribus. Rerum dignissimos dolorum sint veniam est.
             </p>
 
@@ -188,7 +207,7 @@ ViewData["Title"] = "Company Name - Company Profile - Springfield Devs";
         <!-- /.tabs -->
 
     </section>
-    <!-- /.company-content -->
+    <!-- /.group-content -->
 
 </main>
-<!-- /.company -->
+<!-- /.group -->
