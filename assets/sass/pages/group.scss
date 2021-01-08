@@ -1,7 +1,7 @@
-.company {
+.group {
   margin: 0 5vmax;
 
-  .company-header {
+  .group-header {
       align-items:center;
       background: url("http://localhost:3000/images/circuitry/circuit_graphic.svg") 0% -30% no-repeat;
       color:#000;
@@ -21,16 +21,11 @@
           flex: 1 1 auto;
       }
 
-      h2 {
+      h1 {
         font-size:4rem;
         line-height:1;
         margin:2rem auto;
-      }
-
-      .logo {
-        background:#000;
-        border-radius:50%;
-        height:5rem;
+        padding-right:1rem;
       }
 
       .information {
@@ -41,17 +36,25 @@
               order:initial;
               width: 33%;
           }
+
+          .category {
+              color:$light_blue;
+              text-transform:uppercase;
+          }
       }
 
-      .image {
+      .video {
           width:75%;
 
           @media (min-width:1024px) {
               width:40%;
           }
 
-          img {
+          iframe {
               border-radius: 2rem;
+              display:block;
+              height:440px;
+              width:100%;
           }
 
           &::after {
@@ -84,7 +87,7 @@
       }
   }
 
-  .company-content {
+  .group-content {
       width: 100%;
 
       .icon {
@@ -96,6 +99,11 @@
   .tabs {
       display: flex;
       flex-wrap: wrap;
+      justify-content:center;
+
+      @media (min-width: 1024px) {
+          justify-content:flex-start;
+      }
 
       .tab {
           position: absolute;
@@ -182,7 +190,7 @@
       &[class*="-1"] {
 
           @media (min-width:768px) {
-              flex-wrap:nowrap;
+            //   flex-wrap:nowrap;
           }
 
           @media (min-width:1024px) {
@@ -269,6 +277,18 @@
       }
   }
 
+  .image {
+      margin:1rem auto;
+
+    @media (max-width:1023px) {
+        width:50%;
+    }
+
+    img {
+        border-radius:2rem;
+    }
+  }
+
   .skills {
 
       .skill {
@@ -283,13 +303,23 @@
   }
 
   .socials {
+    //   flex-direction:row;
+    //   flex-wrap:nowrap;
 
-      .social {
-          margin:.5rem 0;
-      }
+    ul {
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-between;
+        width:100%;
+    }
 
-      .icon {
-          color: $light_blue;
-      }
+    .social {
+        margin:.5rem 0;
+        width:40%;
+    }
+
+    .icon {
+        color: $light_blue;
+    }
   }
 }
