@@ -3,6 +3,10 @@
     background: #619ECE;
     padding: 60px 0 94px 0;
     position: relative;
+    
+    a {
+        text-decoration: none;
+    }
 
     &:before {
         position: absolute;

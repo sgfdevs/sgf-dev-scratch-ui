@@ -1,0 +1,99 @@
+@page
+@{
+    ViewData["Title"] = "Account - Springfield Devs";
+}
+
+<div class="mt_20"></div>
+
+<form class="form">
+    <div class="field">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName"  />
+    </div>
+        
+    <div class="field">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName"  />
+    </div>
+    
+    <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+    </div>
+    
+    <div class="checkbox_list">
+        <div class="label">Skills</div>
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox" name="skills" value="01" /> HTML
+                </label>
+            </li>
+            
+            <li>
+                <label>
+                    <input type="checkbox" name="skills" value="02" /> iOS
+                </label>
+            </li>
+            
+            <li>
+                <label>
+                    <input type="checkbox" name="skills" value="03" /> CSS
+                </label>
+            </li>
+            
+            <li>
+                <label>
+                    <input type="checkbox" name="skills" value="04" /> React
+                </label>
+            </li>
+            
+            <li>
+                <label>
+                    <input type="checkbox" name="skills" value="05" /> UI/UX
+                </label>
+            </li>
+            
+            <li>
+                <label>
+                    <input type="checkbox" name="skills" value="06" /> macOS
+                </label>
+            </li>
+            
+            <li>
+                <label>
+                    <input type="checkbox" name="skills" value="07" /> JavaScript
+                </label>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="checkbox_list radio">
+        <div class="label">Communication Preference</div>
+        <ul>
+            <li>
+                <label>
+                    <input type="radio" name="communication" value="email" /> Email
+                </label>
+            </li>
+            
+            <li>
+                <label>
+                    <input type="radio" name="communication" value="text" /> Text Message
+                </label>
+            </li>
+            
+            <li>
+                <label>
+                    <input type="radio" name="communication" value="mail" /> Snail Mail
+                </label>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <button class="button tall wide" type="submit">Save</button>
+    </footer>
+</form>
+
+<div class="mt_75"></div>

@@ -10,6 +10,15 @@
     height: 40px;
     display: inline-flex;
     align-items: center;
+    
+    &.tall {
+        height: 64px;
+        border-radius: 33px;
+    }
+    
+    &:disabled {
+        background: #E0E0E0;
+    }
 
     &.blue {
         color: $dark_blue;

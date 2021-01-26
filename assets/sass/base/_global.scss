@@ -35,9 +35,14 @@ img {
 }
 
 a, a:visited, a:active, a:hover {
-    text-decoration: none;
+    //text-decoration: none;
     outline: none !important;
     border: none;
+    color: $light_blue;
+}
+
+a {
+    
 }
 
 ul {
